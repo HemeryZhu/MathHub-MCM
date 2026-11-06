@@ -1,0 +1,4 @@
+interface:
+  display_name: "MCM Paper Export"
+  short_description: "Write and export an MCM modeling paper"
+  default_prompt: "Create an MCM mathematical modeling paper in Word and PDF from verified project results."

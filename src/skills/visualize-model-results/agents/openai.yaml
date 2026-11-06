@@ -1,0 +1,4 @@
+interface:
+  display_name: "建模结果可视化"
+  short_description: "生成结论明确规范统一并适合数学建模竞赛论文使用的专业图表"
+  default_prompt: "使用 $visualize-model-results 把模型结果整理成竞赛论文级图表。"

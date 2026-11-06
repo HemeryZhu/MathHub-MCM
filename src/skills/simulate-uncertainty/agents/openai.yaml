@@ -1,0 +1,4 @@
+interface:
+  display_name: "仿真与不确定性"
+  short_description: "使用蒙特卡洛情景分析和系统仿真量化模型结果不确定性"
+  default_prompt: "使用 $simulate-uncertainty 设计仿真实验并量化结果不确定性。"

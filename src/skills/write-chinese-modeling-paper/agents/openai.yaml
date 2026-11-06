@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文数学建模论文导出"
+  short_description: "按照中文排版规范自动撰写并导出可直接提交的数学建模竞赛论文"
+  default_prompt: "使用 $write-chinese-modeling-paper 根据项目结果生成中文数模论文 Word 和 PDF。"

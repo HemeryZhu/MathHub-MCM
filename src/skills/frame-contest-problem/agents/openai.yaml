@@ -1,0 +1,4 @@
+interface:
+  display_name: "赛题拆解"
+  short_description: "拆解数学建模赛题要求并形成可验证可执行的任务规格清单"
+  default_prompt: "使用 $frame-contest-problem 拆解赛题并形成可执行的建模任务清单。"

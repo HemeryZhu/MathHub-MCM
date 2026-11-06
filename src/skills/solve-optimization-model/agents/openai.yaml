@@ -1,0 +1,4 @@
+interface:
+  display_name: "优化模型求解"
+  short_description: "构建求解并验证线性整数非线性多目标及组合优化模型完整流程"
+  default_prompt: "使用 $solve-optimization-model 建立优化模型、编写求解代码并验证结果。"

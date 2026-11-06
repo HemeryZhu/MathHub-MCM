@@ -1,0 +1,4 @@
+interface:
+  display_name: "HiMCM 论文导出"
+  short_description: "按 HiMCM 专用版式导出含公式、图表与规范摘要的 Word/PDF 论文"
+  default_prompt: "使用 $write-himcm-paper 按 HiMCM 与 16226.docx 样稿格式，根据赛题、代码和真实结果导出 Word 和 PDF 论文。"

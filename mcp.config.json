@@ -1,0 +1,56 @@
+{
+  "servers": {
+    "web-data": {
+      "enabled": true,
+      "transport": "stdio",
+      "command": "node",
+      "args": ["mcp-servers/web-data-server.mjs"],
+      "envFrom": { "BRAVE_SEARCH_API_KEY": "BRAVE_SEARCH_API_KEY" },
+      "allowedTools": ["web_search", "fetch_url", "fetch_json"],
+      "timeoutMs": 30000
+    },
+    "academic-research": {
+      "enabled": true,
+      "transport": "stdio",
+      "command": "node",
+      "args": ["mcp-servers/academic-research-server.mjs"],
+      "envFrom": {
+        "OPENALEX_API_KEY": "OPENALEX_API_KEY",
+        "OPENALEX_EMAIL": "OPENALEX_EMAIL",
+        "CROSSREF_MAILTO": "CROSSREF_MAILTO"
+      },
+      "allowedTools": ["search_openalex", "search_crossref", "get_doi_metadata"],
+      "timeoutMs": 30000
+    },
+    "github": {
+      "enabled": true,
+      "transport": "stdio",
+      "command": "node",
+      "args": ["mcp-servers/github-server.mjs"],
+      "envFrom": { "GITHUB_TOKEN": "GITHUB_TOKEN" },
+      "allowedTools": ["github_search_repositories", "github_get_repository", "github_get_file", "github_search_issues"],
+      "timeoutMs": 30000
+    },
+    "database": {
+      "enabled": true,
+      "transport": "stdio",
+      "command": "node",
+      "args": ["mcp-servers/database-server.mjs"],
+      "envFrom": {
+        "DATABASE_URL": "DATABASE_URL",
+        "DATABASE_SSL": "DATABASE_SSL"
+      },
+      "allowedTools": ["database_status", "database_list_tables", "database_describe_table", "database_query_readonly"],
+      "timeoutMs": 30000
+    },
+    "external-services": {
+      "enabled": true,
+      "transport": "stdio",
+      "command": "node",
+      "args": ["mcp-servers/external-services-server.mjs"],
+      "envFrom": { "MCP_EXTERNAL_SERVICES_JSON": "MCP_EXTERNAL_SERVICES_JSON" },
+      "allowedTools": ["external_service_list", "external_service_request"],
+      "timeoutMs": 30000
+    }
+  }
+}

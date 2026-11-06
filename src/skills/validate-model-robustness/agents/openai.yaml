@@ -1,0 +1,4 @@
+interface:
+  display_name: "模型验证与稳健性"
+  short_description: "通过误差分析敏感性检验压力测试和消融实验系统验证模型"
+  default_prompt: "使用 $validate-model-robustness 验证模型并完成敏感性与稳健性分析。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "数据审计与预处理"
+  short_description: "系统审计建模数据质量并生成可复现可核验的数据清洗流程"
+  default_prompt: "使用 $audit-modeling-data 检查数据质量并设计可复现的预处理方案。"

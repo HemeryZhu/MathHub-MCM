@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学模型设计"
+  short_description: "从赛题目标出发选择并构建可解释可求解可验证的模型体系"
+  default_prompt: "使用 $design-mathematical-model 选择合适模型并给出变量、假设与方程。"
